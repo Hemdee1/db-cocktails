@@ -141,6 +141,7 @@ Navbar
 }
 .nav-center {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: var(--smallWidth);
@@ -225,6 +226,9 @@ Cocktails List
 @media screen and (min-width: 576px) {
   .cocktails-center {
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+  }
+  .nav-center {
+    flex-direction: row;
   }
 }
 /* 
